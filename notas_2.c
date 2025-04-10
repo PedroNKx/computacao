@@ -15,9 +15,9 @@ int main ()
     scanf("%d", &frequencia);
 
     if (media > 8 && frequencia >= 75)
-        printf("O estudante foi Aprovado com distincao pois teve media %.2f e frequencia %d%%.\n", media, frequencia);
+        printf("O estudante foi Aprovado com distincao pois teve media %.1f e frequencia %d%%.\n", media, frequencia);
     else if (media >= 6 && frequencia >=75)
-        printf ("O estudante foi Aprovado Direto pois teve media = %.1f e frequencia = %d%%.\n", media, frequencia);
+        printf ("O estudante foi Aprovado Direto pois teve media %.1f e frequencia = %d%%.\n", media, frequencia);
     else if ((media >= 4 && media < 6 && frequencia >= 75) ||
          (media >= 6 && frequencia < 75) ||
          (media >= 4 && frequencia > 50 && frequencia < 75))
