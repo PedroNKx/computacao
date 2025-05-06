@@ -1,20 +1,27 @@
 #include <stdio.h>
 int main ()
 {
-    int n, soma = 0;
-    printf("Digite um numero inteiro: ");
-    scanf("%d", &n);
-
+    int numero, inicio, fim, soma = 0;
     int i;
-
-    printf("Multiplos de %d no intervalo de 1 a 10:\n", n);
-    for(i=1; i<=10; i++){
-        if(i % n == 0){
-            printf("%d", i);
+    
+    
+    printf("Digite um numero: ");
+    scanf("%d", &numero);
+    
+    printf("Digite o inicio do intervalo: ");
+    scanf("%d", &inicio);
+    
+    printf("Digite o fim do intervalo: ");
+    scanf("%d", &fim);
+    
+    i = inicio;
+    
+    while (i<=fim){
+        if (i % numero == 0){
             soma += i;
         }
-    }
-
-printf("\nA soma de todos os multiplos de %d no intervalo de 1 a 10 e: %d\n", n, soma);
-
+        
+        i++; }
+        
+    printf("A soma dos multiplos eh: %d", soma);
 }
