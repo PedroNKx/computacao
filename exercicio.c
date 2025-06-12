@@ -28,7 +28,7 @@ int main() {
 
         if (encontrado) {
             printf("Este nome está entre os três nomes.\n");
-            break; // Sai do loop
+            break;
         } else {
             printf("Este nome não está entre os três nomes.\n");
         }
