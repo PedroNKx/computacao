@@ -9,13 +9,11 @@ int main() {
     printf("Digite três nomes:\n");
     for (int i = 0; i < 3; i++) {
         fgets(nomes[i], 100, stdin); 
-        nomes[i][strcspn(nomes[i], "\n")] = '\0';  
     }
 
     while (1) {
         printf("Digite um nome: ");
         fgets(entrada, 100, stdin); 
-        entrada[strcspn(entrada, "\n")] = '\0';  
 
         int encontrado = 0;
 
